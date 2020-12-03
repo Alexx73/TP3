@@ -1,5 +1,5 @@
-var pistast = ['No soy un león, pero al final somos iguales.. ', 'El roer es mi trabajo... ',
-  'el queso mi aperitivo ', 'y el gato ha sido siempre, mi más temido enemigo ' ];
+var pistast = ['No soy un león, pero al final somos iguales.. ', 'El roer es mi trabajo...<br> <br>',
+  'el queso mi aperitivo  <br> <br>', 'y el gato ha sido siempre, mi más temido enemigo ' ];
  
 var clases = ["alert alert-primary", "alert alert-secondary", "alert alert-success", "alert alert-danger",
 "alert alert-warning"]
@@ -17,7 +17,7 @@ const quien = document.getElementById('quien');
 // }
 
 function findejuego() { 
-  div.innerHTML = "fin del juego <br>" + 'Has perdido...' + " la respuesta es ratón"
+  div.innerHTML = "fin del juego <br>" + 'Has perdido...la respuesta es <br>' + " ratón <br>"
   var image = document.getElementById('log1');
   // image.className = "animate__animated animate__bounceIn"
   image.src = "img2/mouse-a-1.png" ;
