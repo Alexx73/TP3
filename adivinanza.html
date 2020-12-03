@@ -44,7 +44,7 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 <body>
     <!-- Barra de Navegacion -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white font-weight-bold">
-        <img src="img/scratch .gif" alt="" height="50" style="margin-left: 2em;" >
+        <img src="img/scratch-logo 2.png" alt="" height="50" style="margin-left: 2em;" >
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -77,27 +77,28 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
  
  <div class="container text-center" > <br>
   <!-- <h1 class="animate__animated animate__bounceIn">Adivinanza</h1> <br> -->
-  <h3>Tienes 4 intentos para adivinar quien es el animal</h3>
+  <h3 class="animate__animated animate__rubberBand" >Tienes 4 intentos para adivinar que animal es..</h3>
 </div>
-    <div class="container"id="principal" >
+    <div class="container-fluid"id="principal" >
       <div class="row">
         <!-- <div class="col-1 bg-primary"></div> -->
-        <div class="col-3 "> 
+        <div class="col-4 "> 
           <img src="img2/cat-a-1.png" alt="Circle" id="log1" onclick="change();" 
-          class=" img-fluid max-width: 100% ml-2 animate__animated animate__bounceIn">
+          class=" img-fluid max-width: 100% ml-2 animate__animated animate__lightSpeedInRight">
         </div>
 
         <div class="col-5" >
-          <section  role="alert" id="darpista">
+          <section class="alert alert-primary" role="alert" id="darpista">
+            Pista 1 No soy un león, pero al final somos iguales.. 
           </section>
           <!-- class="alert alert-primary" -->
           
           <!-- <p  class="card "></p> -->
         </div>
-        <div class=" col-4  ">
+        <div class=" col-3  ">
           <div class="container" >
             
-            <h4 class="mt-5 text-sm-left" id="intentos" onload="mvidas()">Vidas: 4</h4>
+            <h2 class="mt-5 text-center" id="intentos" onload="mvidas()">Vidas: 4</h2>
 
           </div>
         </div>
@@ -105,29 +106,28 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 
       <div class="container-fluid text-center">
         
-          <div class="row">
+          <!-- <div class="row"> -->
+  
             <!-- <div class="col-2"></div> -->
-            <div class="col-6 text-center" id="quien"> 
-              <form id="form">
+            <div class="text-center" id="boton" > 
+              <form id="arriesgar">
+                <h4>Quién soy?</h4>
+                <input type="text" placeholder="respuesta..." id="quien">
+                <button type="button" class="btn btn-lg btn-primary" onclick="arriesgar();">arriesgar</button>
                 <!-- <div id="quien"> -->
-                  <label ><h4>Quién soy?</h4><input class="" type="text" ></label>
+                  <!-- <label ><h4>Quién soy?</h4><input class="" type="text" ></label> -->
                 <!-- </div> -->
                 <!-- <div class="col-sm-1"></div> -->
               </form>
-            </div>
-            <div class="col-6"> <br>
+            <!-- </div> -->
+            <!-- <div class="col-6"> <br> 
               <form id="form2">
                 <button type="submit" class="btn btn-lg btn-primary " 
                 onclick="pista()" id="btn1" >DAme Pista</button>
               </form>
-            </div>
+            </div> -->
 
     </div>
-
-     
-
- 
-
 
       <footer class="container-fluid p-3 my-3 bg-secondary text-center text-white">
         <br>
