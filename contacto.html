@@ -8,13 +8,6 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="css/style.css">
 
     <!-- ANIMATE cSS  -->
@@ -66,7 +59,7 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
 </nav>
 
     <div class="container text-center">
-        <h3>Locos por Scratch</h3> 
+        <!-- <h4>Locos por Scratch</h4>  -->
 
       </div> 
 
@@ -75,22 +68,41 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
             <div class="col-md-4 offset-md-4">
                 <div class="card animate__animated animate__flipInY">
                     <div class="card-header bg-dark text-white text-center">
-                        <h3>Contact</h3>
+                        <h3>Contactános</h3>
                     </div>
                     <div class="card-body">
                         <form action="">
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <input type="text" class="form-control"
                                 placeholder="Email">
-                            </div>
-    
+                            </div> -->
+
                             <div class="form-group">
-                                <textarea class="form-control" name="" id="" rows="10"
+                              <label for="txtNombre">Nombre y apellido (requerido)</label>
+                              <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre" required>
+                            </div>
+
+                            <div class="form-group">            
+                              <label for="Email">Correo electrónico (requerido)</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
+                              placeholder="Escriba su email" required >
+                            </div>
+
+    
+                            <!-- <div class="form-group">
+                                <textarea class="form-control" name="" id="" rows="4"
                                  placeholder="Message"> </textarea>
-                            </div>
+                            </div> -->
+
+                            <div class="form-group">
+                              
+                              <label for="exampleFormControlTextarea1">Mensaje (requerido)</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" 
+                              placeholder="Escriba su mensaje aqui...." required ></textarea>
+                            </div> 
     
                             <div class="form-group">
-                                <button class="btn btn-primary btn-block">Send Message </button>
+                                <button class="btn btn-primary btn-block">Enviar </button>
                             </div>
                         </form>
                     </div>
@@ -166,6 +178,13 @@ document.getElementById("demo").innerHTML = "";
     <p>© 2020 Copyright: Tristán Luna Inc.</p>
     <br>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
 
       
   </body>

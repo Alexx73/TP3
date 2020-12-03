@@ -11,14 +11,20 @@
     <!-- ANIMATE cSS  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-<style>
+<!-- <link rel="stylesheet" href="style.css"/> -->
+<link rel="stylesheet" href="css/main.css"/>
+
+<!-- ANIMATE cSS  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<!-- <style>
 
     body {
         background: #D3CCE3;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-</style>
+</style> -->
     
 </head>
 <body>
@@ -55,27 +61,57 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
  </nav>
 
  
+ <div class="container text-center" >
+  <h1 class="animate__animated animate__bounceIn">Adivinanza</h1> <br>
+  <h3>Tienes 4 intentos para adivinar quien es el animal</h3>
+</div>
+    <div class="container"id="principal" >
+      <div class="row">
+        <div class="col-1 bg-primary"></div>
+        <div class="col-4 "> <br>
+          <img src="img2/cat-a-1.png" alt="Circle" id="log1" onclick="change();" 
+          class=" img-fluid max-width: 100% ml-2 animate__animated animate__bounceIn">
+        </div>
 
+        <div class="col-4 bg-secondary " >
+          <section class="alert alert-primary" role="alert" id="darpista">
+          </section>
+          
+          <!-- <p  class="card "></p> -->
+        </div>
+        <div class=" col-3 bg-danger">
+          <div class="container " >
+            <br> <br> <br> <br> <br> <br> <br>
+            <h2 class="text-center" id="intentos" onload="mvidas()">Vidas: 4</h2>
 
- <div class="container text-center">
-<br>
-    <h1>Locos por Scratch</h1>
-<br>
-    <h3>Adinanza</h3>  <br> <br> <br>
+          </div>
+        </div>
+      </div>
 
-    <p>El roer es mi trabajo, </p>
-    <p>
-        el queso mi aperitivo
-    </p>
+      <div class="container text-center">
         
-      <p> y el gato ha sido siempre </p> 
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4 text-center"> <br>
+              <form id="form">
+                <div id="quien">
+                  <label><h3>Quien soy?</h3><input type="text" ></label>
+                </div>
+                
+              </form>
+            </div>
+            <div class="col-4"> <br>
+              <form id="form2">
+                <button type="submit" class="btn btn-lg btn-primary " 
+                onclick="pista()" id="btn1" >DAme Pista</button>
+              </form>
+            </div>
 
-      <p>          mi más temido enemigo. </p>
+    </div>
 
-        <br> <br> <br>
+      <script src="adiv.js"></script>
 
-        <h6>RATÓN</h6>
- </div>
+ 
 
 
  <footer class="container-fluid p-3 my-3 bg-secondary text-center text-white">
