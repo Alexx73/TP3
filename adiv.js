@@ -1,8 +1,10 @@
 var pistast = [ '', '', 'El roer es mi trabajo...<br> <br>',
   'el queso mi aperitivo  <br> <br>', 'y el gato ha sido siempre, mi más temido enemigo ' ];
  
-var clases = [ "alert alert-primary", "alert alert-success", "alert alert-danger",
-"alert alert-info"]
+var clases = ["alert alert-warning animate__animated animate__bounceInUp",
+  "alert alert-success animate__animated animate__bounceInUp",
+  "alert alert-danger animate__animated animate__bounceInUp",
+"alert alert-warning animate__animated animate__bounceInUp"]
 
 var i = 1;
 var div = document.getElementById('darpista');
@@ -63,8 +65,10 @@ console.log(arriesgol);
   } else {
    
   console.log(i);
-  div.className = clases[i-1] ;
-    div.innerHTML = `Pista ${i} <br>${pistast[i]} `;
+  div.className = clases[i-1];
+    div.innerHTML = ` incorrecto <br> Pista ${i} <br>${pistast[i]} `;
+    document.getElementById('quien').value = ''
+    // alert('respuesta incorrecta');
 
   };
 return
