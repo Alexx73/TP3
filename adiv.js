@@ -18,7 +18,9 @@ const sound = new Audio()
 // }
 
 function perdiste() { 
-  div.innerHTML = "fin del juego <br>" + 'Has perdido...la respuesta es <br>' + " ratón <br>"
+  event.preventDefault()
+  div.className = "display-3 font-weight-bold"
+  div.innerHTML = "Fin del juego " + 'Perdiste...la respuesta es <br>' + " ratón <br>"
   var image = document.getElementById('log1');
   image.className = "img-fluid max-width: 100% ml-2 animate__animated animate__bounceIn"
   image.src = "img2/mouse-a-1.png" ;
