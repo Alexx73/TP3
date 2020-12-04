@@ -19,8 +19,8 @@ const sound = new Audio()
 
 function perdiste() { 
   event.preventDefault()
-  div.className = "display-3 font-weight-bold"
-  div.innerHTML = "Fin del juego " + 'Perdiste...la respuesta es <br>' + " ratón <br>"
+  div.className = "h2 text-success font-weight-bold animate__animated animate__backInDown"
+  div.innerHTML = "<br> Fin del juego " + 'Perdiste...la respuesta es <br>' + " ratón <br>"
   var image = document.getElementById('log1');
   image.className = "img-fluid max-width: 100% ml-2 animate__animated animate__bounceIn"
   image.src = "img2/mouse-a-1.png" ;
@@ -32,7 +32,7 @@ function perdiste() {
 
 function ganaste() { 
   event.preventDefault()
-  div.className = "display-3 font-weight-bold"
+  div.className = "h2 font-weight-bold"
   
   quien.style.visibility = "hidden";
   var boton = document.getElementById('boton');
