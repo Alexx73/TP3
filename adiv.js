@@ -48,13 +48,14 @@ function ganaste() {
 function arriesgar() {
   event.preventDefault()
   var arriesgo = document.getElementById("quien").value;
-  console.log(arriesgo);
+  arriesgol = arriesgo.toLowerCase();
+console.log(arriesgol);  
   vidas = vidas - 1;
   i = i + 1;
   intentos.innerHTML = 'Vidas: ' + vidas + '<br>';
 
   // var n = raton.includes(arriesgo);
-  if (arriesgo == "raton" || arriesgo == "ratón") {
+  if (arriesgol == "raton" || arriesgol == "ratón" ) {
     ganaste()
 }
  else if (vidas < 1 ) {
@@ -69,37 +70,3 @@ function arriesgar() {
   };
 return
 }
-
-
-
-
-// const form2 = document.getElementById('form2');
-// form2.addEventListener('submit', pista);
-
-// const username = document.getElementById('username');
-// const pista = document.getElementById('pista');
-
-// function mvidas() {
-//     intentos.innerHTML = 'Vidas: ' + vidas;
-// };
-
-// function pista() {
-//     event.preventDefault()  
-//     if (vidas < 1) {
-//         findejuego()       
-//     } else {
-//       console.log(i);
-//       div.className = clases[i] ;
-//       div.innerHTML = `pista ${i + 1} ${pistast[i]} <br>`;
-//       intentos.innerHTML = 'Vidas: ' + vidas + '<br>';
-//       i = i + 1;
-//       vidas = vidas - 1
-//       console.log('vidas ', vidas);
-//       mvidas();
-//       return
-//   }
-  
-//   return
-// }
-
-
