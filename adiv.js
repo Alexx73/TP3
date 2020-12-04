@@ -13,9 +13,6 @@ const quien = document.getElementById('quien');
 const raton = ["ratón", "raton"];
 const sound = new Audio()
 
-  // var image = document.getElementById('log1');
-  // image.src = "img2/cat 3 w.png";
-// }
 
 function perdiste() { 
   event.preventDefault()
@@ -32,7 +29,7 @@ function perdiste() {
 
 function ganaste() { 
   event.preventDefault()
-  div.className = "h4 text-success font-weight-bold"
+  div.className = "h4 text-success font-weight-bold animate__animated animate__backInDown"
   
   quien.style.visibility = "hidden";
   var boton = document.getElementById('boton');
@@ -67,14 +64,7 @@ function arriesgar() {
   console.log(i);
   div.className = clases[i] ;
     div.innerHTML = `pista ${i} ${pistast[i]} <br>`;
-    
-  // intentos.innerHTML = 'Vidas: ' + vidas + '<br>';
-  
-    
-  // console.log('vidas ', vidas);
-    // mvidas();
-  // setTimeout(() => { console.log(arriesgo); }, 1000);
-  // document.getElementById('quien').value = '';
+
   
   };
 return
@@ -83,43 +73,33 @@ return
 
 
 
-// const arriesgar = document.getElementById('arriesgar');
-// arriesgar.addEventListener(submit, arriesgo)
-// const log = document.getElementById('log');
-// form.addEventListener('click', pista);
-
-const form2 = document.getElementById('form2');
+// const form2 = document.getElementById('form2');
 // form2.addEventListener('submit', pista);
 
-const username = document.getElementById('username');
+// const username = document.getElementById('username');
 // const pista = document.getElementById('pista');
 
-function mvidas() {
-    intentos.innerHTML = 'Vidas: ' + vidas;
-};
+// function mvidas() {
+//     intentos.innerHTML = 'Vidas: ' + vidas;
+// };
 
-function pista() {
-
-    event.preventDefault()
-    
-    if (vidas < 1) {
-        findejuego()       
-    } else {
-      console.log(i);
-      div.className = clases[i] ;
-      div.innerHTML = `pista ${i + 1} ${pistast[i]} <br>`;
-      intentos.innerHTML = 'Vidas: ' + vidas + '<br>';
-      i = i + 1;
-      vidas = vidas - 1
-      console.log('vidas ', vidas);
-      mvidas();
-      return
-  }
+// function pista() {
+//     event.preventDefault()  
+//     if (vidas < 1) {
+//         findejuego()       
+//     } else {
+//       console.log(i);
+//       div.className = clases[i] ;
+//       div.innerHTML = `pista ${i + 1} ${pistast[i]} <br>`;
+//       intentos.innerHTML = 'Vidas: ' + vidas + '<br>';
+//       i = i + 1;
+//       vidas = vidas - 1
+//       console.log('vidas ', vidas);
+//       mvidas();
+//       return
+//   }
   
+//   return
+// }
 
-  return
-}
 
-
-// document.getElementById("myEle").className = "container-fluid";
-      // 'pista ', i + 1, pistast[i];
