@@ -1,8 +1,8 @@
 var pistast = [ '', '', 'El roer es mi trabajo...<br> <br>',
   'el queso mi aperitivo  <br> <br>', 'y el gato ha sido siempre, mi más temido enemigo ' ];
  
-var clases = [ "alert alert-secondary", "alert alert-success", "alert alert-danger",
-"alert alert-warning"]
+var clases = [ "alert alert-primary", "alert alert-success", "alert alert-danger",
+"alert alert-info"]
 
 var i = 1;
 var div = document.getElementById('darpista');
@@ -16,8 +16,8 @@ const sound = new Audio()
 
 function perdiste() { 
   event.preventDefault()
-  div.className = "h4 text-danger font-weight-bold animate__animated animate__backInDown"
-  div.innerHTML = "<br> Fin del juego " + 'Perdiste...la respuesta es <br>' + " ratón <br>"
+  div.className = "h3 text-danger font-weight-bold animate__animated animate__backInDown"
+  div.innerHTML = "<br>  " + '  Perdiste... <br> La respuesta es <br>' + " ratón <br>"
   var image = document.getElementById('log1');
   image.className = "img-fluid max-width: 100% ml-2 animate__animated animate__bounceIn"
   image.src = "img2/mouse-a-1.png" ;
@@ -29,7 +29,7 @@ function perdiste() {
 
 function ganaste() { 
   event.preventDefault()
-  div.className = "h4 text-success font-weight-bold animate__animated animate__backInDown"
+  div.className = "h3 text-success font-weight-bold animate__animated animate__backInDown"
   
   quien.style.visibility = "hidden";
   var boton = document.getElementById('boton');
@@ -63,10 +63,9 @@ console.log(arriesgol);
   } else {
    
   console.log(i);
-  div.className = clases[i] ;
-    div.innerHTML = `pista ${i} ${pistast[i]} <br>`;
+  div.className = clases[i-1] ;
+    div.innerHTML = `Pista ${i} <br>${pistast[i]} `;
 
-  
   };
 return
 }
