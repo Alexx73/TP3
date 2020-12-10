@@ -18,14 +18,25 @@ const sound = new Audio()
 
 function perdiste() { 
   event.preventDefault()
+
+  sound.src = 'img2/Sad_Trombone.mp3';
+  sound.play() 
+
+
   div.className = "h3 text-danger font-weight-bold animate__animated animate__backInDown"
-  div.innerHTML = "<br>  " + '  Perdiste... <br> La respuesta es <br>' + " ratón <br>"
+  
   var image = document.getElementById('log1');
   image.className = "img-fluid max-width: 100% ml-2 animate__animated animate__bounceIn"
-  image.src = "img2/mouse-a-1.png" ;
+  setTimeout(() => { image.src = "img2/mouse-a-1.png" }, 1700);
+
+  // image.src = "img2/mouse-a-1.png" ;
   // btn1.style.visibility = "hidden"
   quien.style.visibility = "hidden";
   var boton = document.getElementById('boton');
+
+  image.style.visibility = "visible";
+  div.innerHTML = "<br>  " + '  Perdiste... <br> La respuesta es <br>' + " ratón <br>"
+
   boton.style.visibility = "hidden";
 };
 
