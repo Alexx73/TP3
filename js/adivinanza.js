@@ -12,6 +12,8 @@ var intentos = document.getElementById('intentos');
 var vidas = 4;
 const btn1 = document.getElementById('btn1');
 const quien = document.getElementById('quien');
+const gato = document.getElementById('gato');
+const principal = document.getElementById('principal');
 const raton = ["ratón", "raton"];
 const sound = new Audio()
 
@@ -21,7 +23,7 @@ function perdiste() {
 
   sound.src = 'img2/Sad_Trombone.mp3';
   sound.play() 
-
+  principal.style.visibility = "hidden";
 
   div.className = "h3 text-danger font-weight-bold animate__animated animate__backInDown"
   
@@ -33,7 +35,7 @@ function perdiste() {
   // btn1.style.visibility = "hidden"
   quien.style.visibility = "hidden";
   var boton = document.getElementById('boton');
-
+  principal.style.visibility = "visible";
   image.style.visibility = "visible";
   div.innerHTML = "<br>  " + '  Perdiste... <br> La respuesta es <br>' + " ratón <br>"
 
